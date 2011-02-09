@@ -61,6 +61,7 @@ header {
 }
   header h1 {
     float: left;
+    font-weight: normal;
   }
   header p.description {
     font:9px 'lucida grande', 'tahoma', sans-serif;
