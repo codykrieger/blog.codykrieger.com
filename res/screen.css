@@ -1,0 +1,286 @@
+/* Base */
+* { margin:0; padding:0; font-family:inherit; }
+body {
+  background:white; color:#222;
+  font:13px georgia, serif;
+  line-height:1.4;
+  font-weight: lighter;
+  margin: 0 auto;
+  width: 640px;
+}
+
+.small { font-size: 11px; color: #999; }
+div.breaker { clear:both; }
+
+p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
+pre, code, tt { font-family: monospace; }
+img { border:none; vertical-align:bottom; }
+strong { font-weight:bold; }
+hr { height:1px; border:none; background-color:#ddd; }
+
+h1,h2,h3,h4 {
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  color:#333;
+  margin: 1.618em 0 1em 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+h1,h3 { font-size: 16px; }
+h2 { font-size: 18px; }
+h4 { font-size: 14px; color:#666; }
+h5,h6 { font-size:12px; color:#888; }
+
+a { text-decoration:none; }
+a:link, a:active { color:#316d96; }
+a:visited { color:#7e5494; }
+a:link:hover, a:active:hover, a:visited:hover { text-decoration:underline; }
+a:link:hover, a:active:hover { color:#006be4; }
+a:visited:hover { color:#af00cf; }
+a > img { margin-bottom:-1px; }
+a.img { border:none; background:transparent !important; }
+
+/* Headlines */
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, h1 > a:hover,
+    h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
+  color:inherit !important;
+  background-color:transparent !important;
+}
+
+/* header */
+header {
+  display: block;
+  border-bottom: 1px solid #eee;
+  /*margin-left:-999em; margin-right:-999em;
+  padding-left:999em; padding-right:999em;*/
+  margin-left:-999em; padding-left:999em;
+  padding-top:1em;
+  padding-bottom:0;
+}
+  header p.description {
+    font:9px 'lucida grande', 'tahoma', sans-serif;
+    color: #ccc;
+  }
+  header ul.navigation {
+    text-align: left;
+    float: right;
+  }
+  header ul.navigation li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 1em;
+  }
+  header ul.navigation li:first-child { margin-left: 0; }
+  header ul.navigation li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  header ul.navigation li a:hover { color: #000; }
+
+/* main */
+#main { margin-bottom: 3em; }
+
+/* main content */
+body div.content {}
+  body div.content *[align=right] { margin-left:1em; margin-bottom:1em; }
+  body div.content img { max-width:100%; }
+
+  /*div.post strong { font-weight:inherit; background:#FBF4B1; }*/
+  body div.content li { margin-left: 2em; margin-bottom:0.3em; }
+  body div.content ul > li { margin-left:1.4em; }
+  body div.content blockquote {
+      padding-left:30px;
+      background: transparent 
+          url(http://static.tumblr.com/sajzoro/2pUkqr1t1/aster.png) 
+          no-repeat scroll 0 0;
+      font-style:italic;
+    }
+    /*div.post blockquote > p {
+      padding-left:0.6em;
+      border-left:0.4em solid #ddd;
+    }*/
+  body div.content div.quotation blockquote { margin-left:-30px; }
+  body div.content pre {
+    background-color:#eee;
+    padding:0.4em 1em;
+    border-left:2px solid #ddd;
+  }
+  body div.content code {
+    background-color:#eee;
+    padding:0 0.1em;
+  }
+  body div.content pre > code {
+    padding:0; background-color:transparent;
+  }
+  body div.content :target { background:#fe0; }
+  body div.content sup:target a { padding:2px 5px; }
+  body div.content div.footnotes li { color:#999; }
+  body div.content div.footnotes li:target { background:#ffc; color:inherit; }
+
+
+/* posts */
+div.post {
+  border-bottom: 1px dashed #ddd;
+  margin-top: 1.5em; margin-bottom: 1.5em;
+  margin-left:-999em; padding-left:999em;
+  page-break-before: always;
+}
+  div.post:last-child { border-bottom:none; }
+  div.post h1:first-child { margin-top:0; }
+  div.post postamble {
+    display:block;
+    margin-bottom:1em;
+    color:#999;
+  }
+    postamble a:link, postamble a:active {
+      color:#859FB3;
+    }
+    postamble a:visited {
+      color:#A591AA;
+    }
+  div.post div.body {}
+    div.post div.body > p.read-more { text-align:center; }
+    div.post div.body > p.read-more a {
+      display:inline-block;
+      padding:0 7px;
+      line-height:22px;
+              border-radius:5px;
+      -webkit-border-radius:5px;
+         -moz-border-radius:5px;
+      background-color:#fffe95;
+      color:#685c00;
+      border:none;
+    }
+    div.post div.body > p.read-more a:hover {
+      background-color:#fff000;
+      color:#302400;
+      text-decoration:none;
+    }
+
+/* prettyprint */
+pre .str { color: #080; }
+pre .kwd { color: #295AA4; }
+pre .com { color: #999; }
+pre .typ { color: #808; }
+pre .lit { color: #066; }
+pre .pun, div.post pre .opn, div.post pre .clo { color: #660; }
+pre .pln { color: #000; }
+pre .tag { color: #008; }
+pre .atn { color: #606; }
+pre .atv { color: #080; }
+pre .dec { color: #606; }
+/* Use higher contrast and font-styling for printable form. */
+@media print {
+  pre .str { color: #060; }
+  pre .kwd { color: #006; font-weight: bold; }
+  pre .com { color: #999; font-style: italic; }
+  pre .typ { color: #404; font-weight: bold; }
+  pre .lit { color: #044; }
+  pre .pun, div.post pre .opn, div.post pre .clo {
+    color: #440;
+  }
+  pre .pln { color: #000; }
+  pre .tag { color: #006; font-weight: bold; }
+  pre .atn { color: #404; }
+  pre .atv { color: #060; }
+}
+
+/* meta */
+div.meta { margin:1em 0; }
+  div.meta p, div.meta .item { margin:0; }
+  div.meta .item, div.meta .tag {
+    background-repeat:no-repeat;
+    background-position:0 0.36em;
+    padding-left:15px;
+    color:black;
+    opacity:0.4;
+    display:block;
+    float:left;
+    margin-left:2em;
+  }
+  div.meta .item:hover { opacity:1.0; }
+  div.meta .item:first-child { margin-left:0; }
+  div.meta .item a, div.meta a.item, div.meta .item a:hover,
+      div.meta a.item:hover {
+    color:inherit;
+  }
+  div.meta .item.reblogged {
+    background-image:
+        url(http://static.tumblr.com/9njdies/592l8jd17/reblogged.png);
+  }
+  div.meta .item.tags { padding-left:0; }
+    div.meta .tag {
+      margin-left:1em;
+      margin-right:0;
+      opacity:1.0;
+      background-image:
+          url(http://static.tumblr.com/9njdies/YO7l8jd2b/tag.png);
+    }
+    div.meta .tag:first-child { margin-left:0; }
+  div.meta .item.time {
+    background-image:
+        url(http://static.tumblr.com/9njdies/zkFl8jd2w/time.png);
+    float:right;
+  }
+  div.meta .item.note-count {
+    float:right;
+    background-image:
+        url(http://static.tumblr.com/9njdies/ykvl8nmzz/note-count.png);
+  }
+  div.meta .item.dsq-comment-count {
+    float:right;
+    background-image:
+        url(http://static.tumblr.com/9njdies/dbPl8uqid/comment-count.png);
+    display:none;
+  }
+
+footer {
+  color:#999;
+  display: block;
+  margin:1em 0 1em 0;
+  padding-bottom: 30px;
+  border-top:1px solid #eee;
+  background: transparent url('end-floral.png') no-repeat scroll bottom center;
+}
+
+/* device specifics */
+
+/* medium-res devices (e.g. ipad and iphone) */
+@media only screen and (max-device-width: 1024px) {
+  html { width:750px; overflow:hidden; }
+  pre { overflow:scroll; white-space:pre-wrap; }
+  pre, code, tt { font-size:0.95em; }
+}
+
+/* medium-res landscape devices (e.g. ipad but not iphone) */
+#sidebar { display:none; }
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (orientation:landscape) {
+  #sidebar {
+    display:block;
+    width:350px;
+    height:100%;
+    border:none;
+    background-color:#333;
+    position:absolute;
+    right:0;
+    top:0;
+  }
+  html { zoom:60%; }
+}
+
+/* devices like laptops and regular computers (including ipad but not
+   iphone) Note that iOS with retina display device calculates with a 1/2
+   resolution due to the concept of "scale", thus an iPhone 4 triggers for
+   480x230px rather than the actual 960x480 pixels. This is a good thing.
+*/
+@media (min-device-width: 480px) {
+  @font-face {
+    font-family: 'M+ 1m';
+    font-style: normal;
+    font-weight: 300;
+    src: local('M+ 1m light'), local('mplus-1m-light'),
+         url('http://hunch.se/style/fonts/mplus-1m-light.ttf') 
+         format('truetype');
+  }
+  pre, code, tt { font-family: 'M+ 1m', monospace; }
+}

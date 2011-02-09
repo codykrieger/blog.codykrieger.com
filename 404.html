@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>untitled</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>
+      var old_urls = {
+        // format like this "<oldpath>": "<newpath>",
+        // e.g. "481294692": "2010/03/29/via-lostinthesounds.html",
+      };
+      
+      var m, path = document.location.pathname;
+      var dst_path = old_urls[path.substr(1)];
+      if (dst_path) {
+        document.location.pathname = '/'+dst_path;
+      }
+    </script>
+    <style type="text/css" media="screen">
+      body { font-family:sans-serif; margin:4em 10em; }
+      a { color:inherit; text-decoration:none; }
+      a:hover { text-decoration:underline; }
+    </style>
+  </head>
+  <body>
+    <h1><a href="/">Rasmus Andersson</a></h1>
+    <h2>404 Not found</h2>
+    <p>Whoops! Looks like you followed a dead link.</p>
+  </body>
+</html>

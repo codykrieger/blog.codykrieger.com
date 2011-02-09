@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Minify Javascript/CSS With Automator and the YUI Compressor
+published: false
+---
+<p>This is what happens when I get bored. I decided that running the YUI Compressor via command line wasn't intuitive enough (I'm usually not opposed to command line work at all), and I created an Automator workflow to do it for me automatically.  It's pretty simple at the moment - all you have to do is download the latest version (I'm using 2.4.2 as of this writing) of the YUI Compressor from here: <a href="http://yuilibrary.com/downloads/" target="_blank">http://yuilibrary.com/downloads/</a>, then:</p>
+<ul>
+<li>extract the archive</li>
+<li>grab the "yuicompressor-2.4.2.jar" file out of the build folder</li>
+<li>rename it to just "yuicompressor.jar" and throw it in your home folder</li>
+</ul>
+<p>Then you can use this Automator workflow: <a href="http://codykrieger.com/minify.workflow.zip">http://codykrieger.com/minify.workflow.zip</a>. I just saved it as a .app, and then you can drag + drop files on top of it to <strong><em>automagically minify them and drop the .min.js or .min.css file in the same folder as the existing file</em></strong>. No configuration to mess with, and stupid simple to use once you've got the YUI Compressor downloaded.  Check it out and let me know what you think! Feedback is welcome. :)</p>
+<p>ck</p>
