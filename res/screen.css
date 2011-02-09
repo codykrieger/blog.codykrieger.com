@@ -74,13 +74,12 @@ header {
     list-style: none;
     margin-left: 1em;
     /*line-height: 22px;*/
-    font-size: 16px;
   }
   header ul.navigation li:first-child { margin-left: 0; }
   header ul.navigation li a {
     color: #888;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 16px;
   }
   header ul.navigation li a:hover { color: #000; }
 
