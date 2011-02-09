@@ -56,6 +56,9 @@ header {
   padding-top:0;
   padding-bottom:0;
 }
+  header h1 {
+    float: left;
+  }
   header p.description {
     font:9px 'lucida grande', 'tahoma', sans-serif;
     color: #ccc;
