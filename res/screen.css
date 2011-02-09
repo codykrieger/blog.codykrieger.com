@@ -66,6 +66,7 @@ header {
   header p.description {
     font: 12px 'Lucida Grande', 'Tahoma', sans-serif;
     color: #bbb;
+    margin-top: 0;
   }
   header ul.navigation {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
