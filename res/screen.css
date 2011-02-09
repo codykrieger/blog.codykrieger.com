@@ -71,14 +71,19 @@ header {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     text-align: left;
     float: right;
-    font-weight: normal;
     font-size: 16px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
   }
   header ul.navigation li {
     display: inline-block;
     list-style: none;
     margin-left: 1em;
     font-size: 16px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
   }
   header ul.navigation li:first-child { margin-left: 0; }
   header ul.navigation li a {
