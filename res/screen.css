@@ -77,7 +77,6 @@ header {
     display: inline-block;
     list-style: none;
     margin-left: 1em;
-    /*line-height: 22px;*/
   }
   header ul.navigation li:first-child { margin-left: 0; }
   header ul.navigation li a {
@@ -283,7 +282,7 @@ footer {
    resolution due to the concept of "scale", thus an iPhone 4 triggers for
    480x230px rather than the actual 960x480 pixels. This is a good thing.
 */
-@media (min-device-width: 480px) {
+/*@media (min-device-width: 480px) {
   @font-face {
     font-family: 'M+ 1m';
     font-style: normal;
@@ -293,4 +292,5 @@ footer {
          format('truetype');
   }
   pre, code, tt { font-family: 'M+ 1m', monospace; }
-}
+}*/
+
