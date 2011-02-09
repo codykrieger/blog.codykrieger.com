@@ -52,10 +52,12 @@ header {
   display: block;
   border-bottom: 1px solid #eee;
   /*margin-left:-999em; margin-right:-999em;
-  padding-left:999em; padding-right:999em;*/
+  padding-left:999em; padding-right:999em;
   margin-left:-999em; padding-left:999em;
   padding-top:0;
-  padding-bottom:0;
+  padding-bottom:0;*/
+  padding: 0;
+  margin: 0 auto;
 }
   header h1 {
     float: left;
