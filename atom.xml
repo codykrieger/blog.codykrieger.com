@@ -4,8 +4,8 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Cody Krieger</title>
-  <link href="http://rsms.me/atom.xml" rel="self"/>
-  <link href="http://rsms.me/"/>
+  <link href="http://blog.codykrieger.com/atom.xml" rel="self"/>
+  <link href="http://blog.codykrieger.com/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://codykrieger.com/</id>
   <author>
