@@ -19,7 +19,7 @@ strong { font-weight:bold; }
 hr { height:1px; border:none; background-color:#ddd; }
 
 h1,h2,h3,h4 {
-  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   color:#333;
   margin: 1.618em 0 1em 0;
   -webkit-font-smoothing: antialiased;

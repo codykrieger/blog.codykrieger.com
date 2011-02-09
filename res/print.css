@@ -1,13 +1,13 @@
 @import url(custom-fonts.css);
 body {
   background:white; color:black;
-  font:11pt georgia, serif;
+  font:11pt Georgia, serif;
   line-height:1.4;
   font-weight: lighter;
   margin: 4em 8em;
   text-rendering: optimizelegibility;
 }
-h1,h2,h3,h4 { font-family: 'Helvetica Neue', helvetica, sans-serif; }
+h1,h2,h3,h4 { font-family: 'Helvetica Neue', Helvetica, sans-serif; }
 a { text-decoration:none; color:inherit; }
 header, footer { display:none; }
 div.post { page-break-before: always; }
