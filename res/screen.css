@@ -53,7 +53,7 @@ header {
   /*margin-left:-999em; margin-right:-999em;
   padding-left:999em; padding-right:999em;*/
   margin-left:-999em; padding-left:999em;
-  padding-top:1em;
+  padding-top:0;
   padding-bottom:0;
 }
   header p.description {
