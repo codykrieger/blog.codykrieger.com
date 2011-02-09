@@ -72,12 +72,12 @@ header {
     text-align: left;
     float: right;
     font-size: 16px;
+    font-weight: normal;
   }
   header ul.navigation li {
     display: inline-block;
     list-style: none;
     margin-left: 1em;
-    font-weight: normal;
   }
   header ul.navigation li:first-child { margin-left: 0; }
   header ul.navigation li a {
