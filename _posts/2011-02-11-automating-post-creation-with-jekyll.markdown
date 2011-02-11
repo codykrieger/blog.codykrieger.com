@@ -26,7 +26,7 @@ the String#parameterize function from
 [Rails](https://github.com/rails/rails), which will replace spaces and
 special characters). For example, if you run:
 
-    "./newpost.rb My Test Post"
+    ./newpost.rb My Test Post
 
 That will generate a file in your posts folder with a name like
 "2011-02-11-my-test-post.markdown." The post is generated based off of a
