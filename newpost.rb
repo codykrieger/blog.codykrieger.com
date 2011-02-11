@@ -10,14 +10,19 @@
 
 if ARGV.empty? or ARGV[0].downcase == "--help" or ARGV[0].downcase == "-h"
   puts <<-USAGE
-    Usage:
-    ./newpost.rb POST NAME
+
+  Usage:
+  % ./newpost.rb POST NAME
+
   USAGE
 
   exit (ARGV.empty? ? 1 : 0)
 end
 
 class String
+  
+  # from ruby on rails (https://github.com/rails/rails)
+  # activesupport/lib/active_support/inflector/transliterate.rb
   def parameterize(sep = '-')
     # replace accented chars with their ascii equivalents
     parameterized_string = self.dup
@@ -32,25 +37,25 @@ class String
     end
     parameterized_string.downcase
   end
+
 end
 
-# Some constants
 TEMPLATE = "template.markdown"
-TARGET_DIR = "_posts"
+POSTS_DIR = "_posts"
 
 # Get the title and use it to derive the new filename
 title = ARGV.join(" ")
-filename = "#{ Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.markdown" 
-filepath = File.join(TARGET_DIR, filename)
+filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.markdown" 
+filepath = File.join(POSTS_DIR, filename)
 
-# Create a copy of the template with the title replaced
-new_post = File.read(TEMPLATE)
-new_post.gsub!('%%TITLE%%', title)
+# Load in the template and set the title
+post_text = File.read(TEMPLATE)
+post_text.gsub!('%%TITLE%%', title)
 
-# Write out the file to the target directory
-new_post_file = File.open(filepath, 'w')
-new_post_file.puts new_post
-new_post_file.close
+# Write out the post
+post_file = File.open(filepath, 'w')
+post_file.puts post_text
+post_file.close
 
 puts "Successfully created file => #{filepath}"
 
