@@ -36,8 +36,8 @@ Jekyll site. Mine looks like this:
 <script src="https://gist.github.com/823013.js?file=template.markdown"></script>
 
 If you want to use an HTML or Textile template, just rename
-"template.markdown" to "template.[markup language]" and change the
-TEMPLATE constant in newpost.rb to "template.[markup language]".
+"template.markdown" to "template.html\_or\_textile" and change the
+TEMPLATE constant in newpost.rb to "template.html\_or\_textile".
 
 Happy Jekyll-ing!
 
