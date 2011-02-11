@@ -35,12 +35,12 @@ class String
 end
 
 # Some constants
-TEMPLATE = "template.html"
+TEMPLATE = "template.markdown"
 TARGET_DIR = "_posts"
 
 # Get the title and use it to derive the new filename
 title = ARGV.join(" ")
-filename = "#{ Time.now.strftime('%Y-%m-%d') }-#{title.parameterize}.html" 
+filename = "#{ Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.markdown" 
 filepath = File.join(TARGET_DIR, filename)
 
 # Create a copy of the template with the title replaced
