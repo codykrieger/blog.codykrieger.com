@@ -261,7 +261,7 @@ footer {
   margin:1em 0 1em 0;
   padding-bottom: 30px;
   border-top:1px solid #eee;
-  background: transparent url('end-floral.png') no-repeat scroll bottom center;
+  background: transparent;
 }
 
 /* device specifics */
