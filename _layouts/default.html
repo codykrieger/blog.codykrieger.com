@@ -39,13 +39,12 @@
     </div>
     {% endif %}
     <footer>
-      <form action="http://www.google.com/cse" id="cse-search-box">
-        <p>
-          Older posts can be found in <a href="/archive/">the archive</a>.
-        </p>
-      </form>
+      <p>
+        Older posts can be found in <a href="/archive/">the archive</a>.
+      </p>
     </footer>
     {% include prettify.html %}
+    {% include disqus.html %}
     {% include analytics.html %}
   </body>
 </html>
