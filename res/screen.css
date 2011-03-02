@@ -132,10 +132,10 @@ body div.content {}
   body div.content pre > code {
     padding:0; background-color:transparent;
   }
-  body div.content :target { background:#fe0; }
-  body div.content sup:target a { padding:2px 5px; }
-  body div.content div.footnotes li { color:#999; }
-  body div.content div.footnotes li:target { background:#ffc; color:inherit; }
+  /*  body div.content :target { background:#fe0; }
+    body div.content sup:target a { padding:2px 5px; }*/
+    body div.content div.footnotes li { color:#999; }
+  /*  body div.content div.footnotes li:target { background:#ffc; color:inherit; }*/
 
 
 /* posts */
