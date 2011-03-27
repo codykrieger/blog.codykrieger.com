@@ -23,7 +23,7 @@ Now, instead of showing the "d," gfxCardStatus will proudly show an "n" once
 again when your discrete GPU is active.
 
 **UPDATE:** gfxCardStatus user Kevin (in the comments) has created an
-"a" icon for those with new 2011 MacBook Pros! Grab them here: http://cl.ly/2v3g1q050S3z0f3i1P3I
+"a" icon for those with new 2011 MacBook Pros! Grab them here: [http://cl.ly/2v3g1q050S3z0f3i1P3I](http://cl.ly/2v3g1q050S3z0f3i1P3I)
 
 Thanks for your feedback, everyone!
 
