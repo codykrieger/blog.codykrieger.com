@@ -17,7 +17,8 @@ is my only real complaint about it: there is no good way to
 automagically generate posts. That is, there wasn't, until I wrote a
 neat little script to do it for me! Here it is:
 
-<script src="https://gist.github.com/823013.js?file=newpost.rb"></script>
+<script src="https://gist.github.com/823013.js?file=newpost.rb">
+</script>
 
 Just drop that file in the root of your Jekyll site, and use it like this:
 "./newpost.rb POST TITLE" (the title may contain
@@ -33,7 +34,8 @@ That will generate a file in your posts folder with a name like
 markdown template, called "template.markdown," in the root of your
 Jekyll site. Mine looks like this:
 
-<script src="https://gist.github.com/823013.js?file=template.markdown"></script>
+<script src="https://gist.github.com/823013.js?file=template.markdown">
+</script>
 
 If you want to use an HTML or Textile template, just rename
 "template.markdown" to "template.html\_or\_textile" and change the
