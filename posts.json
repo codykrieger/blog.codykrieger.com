@@ -1,14 +1,9 @@
 ---
 layout: nil
 ---
-{
-    "posts": [
-        {% for post in site.posts %}
-        {
-            "title": "{{post.title}}",
-            "url": "{{post.id}}",
-            "date": "{{post.date | date_to_xmlschema}}"
-        },
-        {% endfor %}
-    ]
-}
+{ \"posts\": [
+    {% for post in site.posts %}
+    { \"title\": \"{{post.title}}\", \"url\": \"{{post.id}}\",
+      \"date\": \"{{post.date | date_to_xmlschema}}\" },
+    {% endfor %}
+]}
