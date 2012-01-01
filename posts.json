@@ -6,7 +6,7 @@ layout: nil
     {
         "title": "{{ post.title | cgi_escape }}",
         "url": "{{ post.id }}",
-        "date": "{{ post.date | date_to_xmlschema }}"
+        "date": "{{ post.date }}"
     }
     {% if post != site.posts.last %},{% endif %}
     {% endfor %}
