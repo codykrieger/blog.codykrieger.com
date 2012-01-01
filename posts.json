@@ -4,9 +4,9 @@ layout: nil
 { "posts": [
     {% for post in site.posts %}
     {
-        "title": "{{post.title}}",
-        "url": "{{post.id}}",
-        "date": "{{post.date | date_to_xmlschema}}"
+        "title": "{{ post.title.gsub('"', '\"') }}",
+        "url": "{{ post.id }}",
+        "date": "{{ post.date | date_to_xmlschema }}"
     }
     {% if post != site.posts.last %},{% endif %}
     {% endfor %}
