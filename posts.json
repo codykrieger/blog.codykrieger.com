@@ -4,7 +4,7 @@ layout: nil
 { "posts": [
     {% for post in site.posts %}
     {
-        "title": "{{ post.title.gsub('"', '\"') }}",
+        "title": "{{ CGI::escape(post.title) }}",
         "url": "{{ post.id }}",
         "date": "{{ post.date | date_to_xmlschema }}"
     }
