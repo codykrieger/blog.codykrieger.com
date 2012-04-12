@@ -20,7 +20,7 @@ if ARGV.empty? or ARGV[0].downcase == "--help" or ARGV[0].downcase == "-h"
 end
 
 class String
-  
+
   # from ruby on rails (https://github.com/rails/rails)
   # activesupport/lib/active_support/inflector/transliterate.rb
   def parameterize(sep = '-')
@@ -40,12 +40,12 @@ class String
 
 end
 
-TEMPLATE = "template.markdown"
+TEMPLATE = "template.md"
 POSTS_DIR = "_posts"
 
 # Get the title and use it to derive the new filename
 title = ARGV.join(" ")
-filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.markdown" 
+filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.parameterize}.md"
 filepath = File.join(POSTS_DIR, filename)
 
 # Load in the template and set the title
