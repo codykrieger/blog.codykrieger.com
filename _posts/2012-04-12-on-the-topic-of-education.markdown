@@ -19,7 +19,7 @@ It's sad that RIT can be allowed to take ~$40,000 per year from its students and
 
 Things like [Kahn Academy][kahn], [Treehouse][treehouse], and [PeepCode][peepcode] are the future. I see them filling the gap where traditional higher education continues to fall short (in actually teaching people useful, practical skills). Unfortunately, it is still common practice at some workplaces to only hire college graduates. This needs to change, especially in light of our current education system's flaws, and the vast sums of money (and loans) required to get through it in one piece.
 
-How much money you spent to earn your degree shouldn't define you. Your passion and your skills should.
+How much money you spend to earn your degree shouldn't define you. Your passion and your skills should.
 
 ck
 
