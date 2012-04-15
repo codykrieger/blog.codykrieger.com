@@ -6,11 +6,17 @@ body {
   line-height:1.4;
   font-weight: lighter;
   margin: 0 auto;
-  width: 640px;
+}
+
+body > div.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 740px;
 }
 
 .small { font-size: 11px; color: #999; }
 div.breaker { clear:both; }
+.clear { clear: both; }
 
 p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
 pre, code, tt { font-family: monospace; }
@@ -78,7 +84,8 @@ header {
     text-rendering: optimizelegibility;
   }
   header ul.navigation li {
-    display: inline-block;
+    display: block;
+    float: left;
     list-style: none;
     margin-left: 1em;
     font-size: 16px;
@@ -142,7 +149,6 @@ body div.content {}
 div.post {
   border-bottom: 1px dashed #ddd;
   margin-top: 1.5em; margin-bottom: 1.5em;
-  margin-left:-999em; padding-left:999em;
   page-break-before: always;
 }
   div.post a.comment-count { color: #999; }
@@ -178,83 +184,6 @@ div.post {
       text-decoration:none;
     }
 
-/* prettyprint */
-pre .str { color: #080; }
-pre .kwd { color: #295AA4; }
-pre .com { color: #999; }
-pre .typ { color: #808; }
-pre .lit { color: #066; }
-pre .pun, div.post pre .opn, div.post pre .clo { color: #660; }
-pre .pln { color: #000; }
-pre .tag { color: #008; }
-pre .atn { color: #606; }
-pre .atv { color: #080; }
-pre .dec { color: #606; }
-/* Use higher contrast and font-styling for printable form. */
-@media print {
-  pre .str { color: #060; }
-  pre .kwd { color: #006; font-weight: bold; }
-  pre .com { color: #999; font-style: italic; }
-  pre .typ { color: #404; font-weight: bold; }
-  pre .lit { color: #044; }
-  pre .pun, div.post pre .opn, div.post pre .clo {
-    color: #440;
-  }
-  pre .pln { color: #000; }
-  pre .tag { color: #006; font-weight: bold; }
-  pre .atn { color: #404; }
-  pre .atv { color: #060; }
-}
-
-/* meta */
-div.meta { margin:1em 0; }
-  div.meta p, div.meta .item { margin:0; }
-  div.meta .item, div.meta .tag {
-    background-repeat:no-repeat;
-    background-position:0 0.36em;
-    padding-left:15px;
-    color:black;
-    opacity:0.4;
-    display:block;
-    float:left;
-    margin-left:2em;
-  }
-  div.meta .item:hover { opacity:1.0; }
-  div.meta .item:first-child { margin-left:0; }
-  div.meta .item a, div.meta a.item, div.meta .item a:hover,
-      div.meta a.item:hover {
-    color:inherit;
-  }
-  div.meta .item.reblogged {
-    background-image:
-        url(http://static.tumblr.com/9njdies/592l8jd17/reblogged.png);
-  }
-  div.meta .item.tags { padding-left:0; }
-    div.meta .tag {
-      margin-left:1em;
-      margin-right:0;
-      opacity:1.0;
-      background-image:
-          url(http://static.tumblr.com/9njdies/YO7l8jd2b/tag.png);
-    }
-    div.meta .tag:first-child { margin-left:0; }
-  div.meta .item.time {
-    background-image:
-        url(http://static.tumblr.com/9njdies/zkFl8jd2w/time.png);
-    float:right;
-  }
-  div.meta .item.note-count {
-    float:right;
-    background-image:
-        url(http://static.tumblr.com/9njdies/ykvl8nmzz/note-count.png);
-  }
-  div.meta .item.dsq-comment-count {
-    float:right;
-    background-image:
-        url(http://static.tumblr.com/9njdies/dbPl8uqid/comment-count.png);
-    display:none;
-  }
-
 footer {
   color:#999;
   display: block;
@@ -266,27 +195,52 @@ footer {
 
 /* device specifics */
 
+.show-on-phones { display: none !important; }
+.show-on-tablets { display: none !important; }
+.show-on-desktops { display: block !important; }
+
+.hide-on-phones { display: block !important; }
+.hide-on-tablets { display: block !important; }
+.hide-on-desktops { display: none !important; }
+
+
+/* Modernizr-enabled tablet targeting */
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+    .touch .hide-on-phones { display: block !important; }
+    .touch .hide-on-tablets { display: none !important; }
+    .touch .hide-on-desktops { display: block !important; }
+
+    .touch .show-on-phones { display: none !important; }
+    .touch .show-on-tablets { display: block !important; }
+    .touch .show-on-desktops { display: none !important; }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .hide-on-phones { display: none !important; }
+    .hide-on-tablets { display: block !important; }
+    .hide-on-desktops { display: block !important; }
+
+    .show-on-phones { display: block !important; }
+    .show-on-tablets { display: none !important; }
+    .show-on-desktops { display: none !important; }
+}
+
 /* medium-res devices (e.g. ipad and iphone) */
 @media only screen and (max-device-width: 1024px) {
-  html { width:750px; overflow:hidden; }
   pre { overflow:scroll; white-space:pre-wrap; }
   pre, code, tt { font-size:0.95em; }
 }
 
 /* medium-res landscape devices (e.g. ipad but not iphone) */
-#sidebar { display:none; }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (orientation:landscape) {
-  #sidebar {
-    display:block;
-    width:350px;
-    height:100%;
-    border:none;
-    background-color:#333;
-    position:absolute;
-    right:0;
-    top:0;
-  }
-  html { zoom:60%; }
+  /* html { zoom:60%; }*/
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+    .container { min-width: 0; margin-left: 0; margin-right: 0; }
 }
 
 /* devices like laptops and regular computers (including ipad but not

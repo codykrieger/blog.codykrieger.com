@@ -39,11 +39,16 @@
     <h2>404 Not found</h2>
     <p>Whoops! Looks like you followed a dead link.</p>
     <script type="text/javascript">
+      var _gauges = _gauges || [];
       (function() {
-        var ma = document.createElement('script'); ma.type = 'text/javascript';
-        ma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.codykrieger.com/?js';
-        
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ma, s); 
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4ef5b782f5a1f5346d000002');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
       })();
     </script>
   </body>

@@ -1,52 +1,49 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}cody krieger</title>
     <meta name="description" content="cody krieger's blog - insights and ideas on programming and technology">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <link href="http://feeds.feedburner.com/cody-krieger" rel="alternate" title="Cody Krieger" type="application/atom+xml" />
 
-    {% if page.title != "Archive (sidebar)" %}
-		<meta name="viewport" content="width=700">
-		{% endif %}
     <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
     <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
-    {% if page.title != "Archive (sidebar)" %}
-    {% include sidebar_ui_controller.html %}
-    {% endif %}
   </head>
   <body>
-    <iframe id="sidebar"></iframe>
-    <header>
-      <ul class="navigation">
-        <li><a href="/archive/" title="Archived articles">archive</a></li>
-        <li><a href="http://codykrieger.com/">codykrieger.com</a></li>
-      </ul>
-      <h1><a href="/">cody krieger's blog</a></h1>
-      <div class="breaker"></div>
-      <p class="description">insights and ideas on programming and technology</p>
-    </header>
-    <div class="wrapper content">
-      {{ content }}
-    </div>
-    {% if paginator.page %}
-    <div id="paginator">
-      {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}/">Older entries</a>
+    <div class="container">
+      <header>
+        <ul class="navigation">
+          <li><a href="/archive/" title="Archived articles">archive</a></li>
+          <li class="hide-on-phones"><a href="http://codykrieger.com/">codykrieger.com</a></li>
+        </ul>
+        <h1><a href="/">cody krieger's blog</a></h1>
+        <div class="clear"></div>
+        <p class="description">insights and ideas on programming and technology</p>
+      </header>
+      <div class="wrapper content">
+        {{ content }}
+      </div>
+      {% if paginator.page %}
+      <div id="paginator">
+        {% if paginator.next_page %}
+        <a href="/page{{ paginator.next_page }}/">Older entries</a>
+        {% endif %}
+        {% if paginator.previous_page %}
+        <a href="/page{{ paginator.previous_page }}/">Newer entries</a>
+        {% endif %}
+      </div>
       {% endif %}
-      {% if paginator.previous_page %}
-      <a href="/page{{ paginator.previous_page }}/">Newer entries</a>
-      {% endif %}
+      <footer>
+        <p>
+          Older posts can be found in <a href="/archive/">the archive</a>.
+        </p>
+      </footer>
     </div>
-    {% endif %}
-    <footer>
-      <p>
-        Older posts can be found in <a href="/archive/">the archive</a>.
-      </p>
-    </footer>
-    {% include prettify.html %}
     {% include disqus.html %}
     {% include analytics.html %}
   </body>
