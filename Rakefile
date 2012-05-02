@@ -108,7 +108,12 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
+    post.puts
+    post.puts
   end
+
+  # open in default editor
+  system "#{ENV["EDITOR"]} #{filename}" if ENV["EDITOR"]
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -144,7 +149,12 @@ task :new_page, :filename do |t, args|
       page.puts "sharing: true"
       page.puts "footer: true"
       page.puts "---"
+      page.puts
+      page.puts
     end
+
+    # open in default editor
+    system "#{ENV["EDITOR"]} #{filename}" if ENV["EDITOR"]
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
   end

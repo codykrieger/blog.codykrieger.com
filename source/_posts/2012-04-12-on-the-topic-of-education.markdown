@@ -2,6 +2,7 @@
 layout: post
 title: On the Topic of Education
 published: true
+comments: true
 ---
 
 This is a real conversation I had today with someone that works in RIT's Software Engineering department office.

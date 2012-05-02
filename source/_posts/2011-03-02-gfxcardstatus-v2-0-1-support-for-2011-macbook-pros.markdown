@@ -2,6 +2,7 @@
 layout: post
 title: gfxCardStatus v2.0.1 - Support for 2011 MacBook Pros
 published: true
+comments: true
 ---
 
 I'm excited to announce that 2011 MacBook Pros have joined the ranks of 

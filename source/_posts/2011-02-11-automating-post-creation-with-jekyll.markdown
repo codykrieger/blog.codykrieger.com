@@ -2,6 +2,7 @@
 layout: post
 title: Automating Post Creation with Jekyll
 published: true
+comments: true
 ---
 So! As you may have noticed, I recently completely overhauled my blog.
 New design, new backend ([GitHub Pages](http://pages.github.com/) + 

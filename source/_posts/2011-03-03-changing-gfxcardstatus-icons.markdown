@@ -2,6 +2,7 @@
 layout: post
 title: Changing gfxCardStatus Icons
 published: true
+comments: true
 ---
 
 Alright. So there have been a lot of people contacting me saying that they 
