@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Automating Post Creation with Jekyll &mdash; cody krieger</title>
+  <meta name="author" content="Cody Krieger">
+
+  
+  <meta name="description" content="So! As you may have noticed, I recently completely overhauled my blog.
+New design, new backend (GitHub Pages + Jekyll), and new comment system
+( &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="cody krieger" type="application/atom+xml">
+  <script type="text/javascript" src="http://use.typekit.com/cll3kcy.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  
+
+  
+  <script type="text/javascript">
+    if (window.location.toString().indexOf('.dev') == -1) {
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    }
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">cody krieger</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<ul class="main-navigation">
+  <li><a href="/archives/">post archives</a></li>
+  <li><a href="http://codykrieger.com">codykrieger.com</a></li>
+  <li><a href="https://github.com/codykrieger">github</a></li>
+  <li><a href="http://twitter.com/codykrieger">twitter</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Automating Post Creation With Jekyll</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-11T00:00:00-05:00" pubdate data-updated="true">Feb 11<span>th</span>, 2011</time>
+        
+        | <a href="#disqus_thread" data-disqus-identifier="">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So! As you may have noticed, I recently completely overhauled my blog.
+New design, new backend (<a href="http://pages.github.com/">GitHub Pages</a> + 
+<a href="https://github.com/mojombo/jekyll">Jekyll</a>), and new comment system
+(<a href="http://www.disqus.com/">Disqus</a>). I&#39;m working on migrating comments
+over from Posterous right now, so those should be back up soon.</p>
+
+<p>Jekyll is a static page generator written in Ruby. It does a fantastic
+job at making blogging a breeze without the need for something like
+WordPress or Posterous, and with GitHub Pages, you don&#39;t have to drop a
+dime on hosting it anywhere. It is very simple, and that leads to what
+is my only real complaint about it: there is no good way to
+automagically generate posts. That is, there wasn&#39;t, until I wrote a
+neat little script to do it for me!</p>
+
+<!-- more -->
+
+<p>Here it is:</p>
+
+<script src="https://gist.github.com/823013.js?file=newpost.rb">
+</script>
+
+<p>Just drop that file in the root of your Jekyll site, and use it like this:
+&quot;./newpost.rb POST TITLE&quot; (the title may contain
+any number of spaces and characters as you want - the script utilizes
+the String#parameterize function from
+<a href="https://github.com/rails/rails">Rails</a>, which will replace spaces and
+special characters). For example, if you run:</p>
+
+<pre><code>./newpost.rb My Test Post
+</code></pre>
+
+<p>That will generate a file in your posts folder with a name like
+&quot;2011-02-11-my-test-post.markdown.&quot; The post is generated based off of a
+markdown template, called &quot;template.markdown,&quot; in the root of your
+Jekyll site. Mine looks like this:</p>
+
+<script src="https://gist.github.com/823013.js?file=template.markdown">
+</script>
+
+<p>If you want to use an HTML or Textile template, just rename
+&quot;template.markdown&quot; to &quot;template.html_or_textile&quot; and change the
+TEMPLATE constant in newpost.rb to &quot;template.html_or_textile&quot;.</p>
+
+<p>Happy Jekyll-ing!</p>
+
+<p>ck</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Cody Krieger</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-11T00:00:00-05:00" pubdate data-updated="true">Feb 11<span>th</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html" data-via="codykrieger" data-counturl="http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/01/14/compressify-javascript-css-minifier-for-the-mac-app-store.html" title="Previous Post: Compressify - JavaScript/CSS Minifier for the Mac App Store">&laquo; Compressify - JavaScript/CSS Minifier for the Mac App Store</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/03/02/gfxcardstatus-v2-0-1-support-for-2011-macbook-pros.html" title="Next Post: gfxCardStatus v2.0.1 - Support for 2011 MacBook Pros">gfxCardStatus v2.0.1 - Support for 2011 MacBook Pros &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2012/04/12/on-the-topic-of-education.html">On the Topic of Education</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/03/changing-gfxcardstatus-icons.html">Changing gfxCardStatus Icons</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/03/02/gfxcardstatus-v2-0-1-support-for-2011-macbook-pros.html">gfxCardStatus v2.0.1 - Support for 2011 MacBook Pros</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/02/11/automating-post-creation-with-jekyll.html">Automating Post Creation with Jekyll</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/01/14/compressify-javascript-css-minifier-for-the-mac-app-store.html">Compressify - JavaScript/CSS Minifier for the Mac App Store</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("codykrieger", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/codykrieger" class="twitter-follow-button" data-show-count="false">Follow @codykrieger</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Cody Krieger -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'codykriegersblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = '/2011/02/11/automating-post-creation-with-jekyll';
+        var disqus_url = 'http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

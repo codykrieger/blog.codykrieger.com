@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[cody krieger]]></title>
+  <link href="http://blog.codykrieger.com/atom.xml" rel="self"/>
+  <link href="http://blog.codykrieger.com/"/>
+  <updated>2012-05-03T10:16:49-04:00</updated>
+  <id>http://blog.codykrieger.com/</id>
+  <author>
+    <name><![CDATA[Cody Krieger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[On the Topic of Education]]></title>
+    <link href="http://blog.codykrieger.com/2012/04/12/on-the-topic-of-education.html"/>
+    <updated>2012-04-12T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2012/04/12/on-the-topic-of-education</id>
+    <content type="html"><![CDATA[<p>This is a real conversation I had today with someone that works in RIT&#39;s Software Engineering department office.</p>
+
+<!-- more -->
+
+<ul>
+<li><strong>Me:</strong> <em>[Speaking about the Software Engineering department&#39;s website.]</em> This new design is terrible. I&#39;d have a hard time taking this major seriously if I saw the website before I visited RIT and had a tour of the program.</li>
+<li><strong>Office worker:</strong> Yeah, we don&#39;t really have any control over it. Higher-ups make the decisions and we just have to deal with it.</li>
+<li><strong>Me:</strong> It seems like every department is completely helpless to make their own decisions and empower their students.</li>
+<li><strong>Office worker:</strong> …welcome to RIT.</li>
+</ul>
+
+<p>I feel like this is true more and more every day. RIT claims to have its students&#39; best interests in mind, and then turns around and spends absurd amounts of money on things that aren&#39;t needed or wanted. Case in point: <a href="http://www.reddit.com/r/RITFountains">the fountains</a>, <a href="http://www.rit.edu/%7Ew-conver/">the semester conversion</a>, and <a href="http://codykrieger.com/genesis-open-letter.html">the GeneSIS project that I wrote about</a>, which is the &quot;replacement&quot; for our current student information system. It&#39;s a nearly-off-the-shelf copy of PeopleSoft, which is manufactured by Oracle. It is, without a doubt, <strong>the most terrifyingly bad software I&#39;ve ever seen</strong>. And RIT has paid more than <strong><em>$24 million</em></strong> for it. <a href="http://elliottback.com/wp/peoplesoft-sucks-why-enterprise-software-creates-more-problems-than-it-solves/">They&#39;re not the first</a> to experience the <a href="http://berbs.us/2006/06/peoplesoft-still-sucks/">horrors of PeopleSoft</a>, which makes the decision to pay for it even more inexcusable.</p>
+
+<p>In the past, it was common for alumni to donate to RIT, and/or their specific major&#39;s department. More than a few of my friends and colleagues (both students and alumni) have expressed their newfound unwillingness to do so. If there was ever a chance of me personally donating anything to RIT, it has been utterly destroyed by the bureaucracy and the inherent lack of flexibility in everything that the administration does.</p>
+
+<p>It&#39;s sad that RIT can be allowed to take ~$40,000 per year from its students and not allow them to have any say in how their money is spent. Even more sad is that this seems to be increasingly &quot;normal&quot; for schools in the US. It&#39;s abundantly clear that <a href="http://www.boston.com/bostonglobe/ideas/brainiac/2011/05/deresiewicz_on_1.html">education in the US is broken</a>, and RIT isn&#39;t making the case in their favor very well.</p>
+
+<p>Things like <a href="http://www.khanacademy.org/">Kahn Academy</a>, <a href="http://teamtreehouse.com/">Treehouse</a>, and <a href="https://peepcode.com">PeepCode</a> are the future. I see them filling the gap where traditional higher education continues to fall short (in actually teaching people useful, practical skills). Unfortunately, it is still common practice at some workplaces to only hire college graduates. This needs to change, especially in light of our current education system&#39;s flaws, and the vast sums of money (and loans) required to get through it in one piece.</p>
+
+<p>How much money you spend to earn your degree shouldn&#39;t define you. Your passion and your skills should.</p>
+
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Changing gfxCardStatus Icons]]></title>
+    <link href="http://blog.codykrieger.com/2011/03/03/changing-gfxcardstatus-icons.html"/>
+    <updated>2011-03-03T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2011/03/03/changing-gfxcardstatus-icons</id>
+    <content type="html"><![CDATA[<p>Alright. So there have been a lot of people contacting me saying that they 
+don&#39;t like the &quot;d&quot; over the &quot;n&quot; that gfxCardStatus used to show when the 
+NVIDIA GPU was active on 2010 MacBook Pros. If you&#39;re one of those people, 
+I&#39;m sorry. I didn&#39;t mean to upset anyone. Consistency is one of my main goals, 
+and moving toward a standardized icon system is one of the ways I was trying 
+to do just that.</p>
+
+<p>The good news is that you can actually change it back yourselves! Just follow 
+these steps.</p>
+
+<!-- more -->
+
+<ul>
+<li>Control click on gfxCardStatus.app and hit &quot;Show Package Contents&quot;</li>
+<li>Go to Contents &gt; Resources</li>
+<li>Delete or rename discrete-3.png and discrete-3-white.png to something else</li>
+<li>Rename nvidia-3.png and nvidia-3-white.png to discrete-3.png and discrete-3-white.png</li>
+</ul>
+
+<p>Now, instead of showing the &quot;d,&quot; gfxCardStatus will proudly show an &quot;n&quot; once 
+again when your discrete GPU is active.</p>
+
+<p><strong>UPDATE:</strong> gfxCardStatus user Kevin (in the comments) has created an
+&quot;a&quot; icon for those with new 2011 MacBook Pros! Grab them here: <a href="http://cl.ly/2v3g1q050S3z0f3i1P3I">http://cl.ly/2v3g1q050S3z0f3i1P3I</a></p>
+
+<p>Thanks for your feedback, everyone!</p>
+
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v2.0.1 - Support for 2011 MacBook Pros]]></title>
+    <link href="http://blog.codykrieger.com/2011/03/02/gfxcardstatus-v2-0-1-support-for-2011-macbook-pros.html"/>
+    <updated>2011-03-02T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2011/03/02/gfxcardstatus-v2-0-1-support-for-2011-macbook-pros</id>
+    <content type="html"><![CDATA[<p>I&#39;m excited to announce that 2011 MacBook Pros have joined the ranks of 
+systems that are compatible with gfxCardStatus!</p>
+
+<p>As usual, just hit Check for Updates or download manually from 
+<a href="http://codykrieger.com/gfxCardStatus">the gfxCardStatus website</a>. Also, 
+take a look at the <a href="http://codykrieger.com/gfxCardStatus/releasenotes/2.0.1.html">release notes</a> 
+for some important information.</p>
+
+<p>Comments, suggestions and general feedback are always welcome in the comments 
+or via email (cody [at] codykrieger [dot] com).</p>
+
+<p>What are you waiting for? Go get it!</p>
+
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automating Post Creation with Jekyll]]></title>
+    <link href="http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll.html"/>
+    <updated>2011-02-11T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2011/02/11/automating-post-creation-with-jekyll</id>
+    <content type="html"><![CDATA[<p>So! As you may have noticed, I recently completely overhauled my blog.
+New design, new backend (<a href="http://pages.github.com/">GitHub Pages</a> + 
+<a href="https://github.com/mojombo/jekyll">Jekyll</a>), and new comment system
+(<a href="http://www.disqus.com/">Disqus</a>). I&#39;m working on migrating comments
+over from Posterous right now, so those should be back up soon.</p>
+
+<p>Jekyll is a static page generator written in Ruby. It does a fantastic
+job at making blogging a breeze without the need for something like
+WordPress or Posterous, and with GitHub Pages, you don&#39;t have to drop a
+dime on hosting it anywhere. It is very simple, and that leads to what
+is my only real complaint about it: there is no good way to
+automagically generate posts. That is, there wasn&#39;t, until I wrote a
+neat little script to do it for me!</p>
+
+<!-- more -->
+
+<p>Here it is:</p>
+
+<script src="https://gist.github.com/823013.js?file=newpost.rb">
+</script>
+
+<p>Just drop that file in the root of your Jekyll site, and use it like this:
+&quot;./newpost.rb POST TITLE&quot; (the title may contain
+any number of spaces and characters as you want - the script utilizes
+the String#parameterize function from
+<a href="https://github.com/rails/rails">Rails</a>, which will replace spaces and
+special characters). For example, if you run:</p>
+
+<pre><code>./newpost.rb My Test Post
+</code></pre>
+
+<p>That will generate a file in your posts folder with a name like
+&quot;2011-02-11-my-test-post.markdown.&quot; The post is generated based off of a
+markdown template, called &quot;template.markdown,&quot; in the root of your
+Jekyll site. Mine looks like this:</p>
+
+<script src="https://gist.github.com/823013.js?file=template.markdown">
+</script>
+
+<p>If you want to use an HTML or Textile template, just rename
+&quot;template.markdown&quot; to &quot;template.html_or_textile&quot; and change the
+TEMPLATE constant in newpost.rb to &quot;template.html_or_textile&quot;.</p>
+
+<p>Happy Jekyll-ing!</p>
+
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Compressify - JavaScript/CSS Minifier for the Mac App Store]]></title>
+    <link href="http://blog.codykrieger.com/2011/01/14/compressify-javascript-css-minifier-for-the-mac-app-store.html"/>
+    <updated>2011-01-14T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2011/01/14/compressify-javascript-css-minifier-for-the-mac-app-store</id>
+    <content type="html"><![CDATA[<p>My newest endeavor into OS X development! Just submitted to the Mac App Store today, pending review.</p>
+<p>Super simple, no-frills JavaScript and CSS minification and obfuscation. That&#8217;s Compressify! Check out its dedicated page on my website here: <a href="http://codykrieger.com/compressify">http://codykrieger.com/compressify</a></p>
+<p>If you&#8217;re willing to write an honest review, hit me up via email (cody [at] codykrieger [dot] com), and I&#8217;ll hook you up with a review copy once Compressify is released!</p>
+<p>Until next time, ladies and gents!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v2.0 Released!]]></title>
+    <link href="http://blog.codykrieger.com/2010/12/17/gfxcardstatus-v2-0-released-.html"/>
+    <updated>2010-12-17T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2010/12/17/gfxcardstatus-v2-0-released-</id>
+    <content type="html"><![CDATA[<p>Ladies and gentlemen!  gfxCardStatus v2.0 has been officially released! Please <a href="http://codykrieger.com/gfxCardStatus/releasenotes/2.0.html">check out the release notes</a> for the full list of changes (there are <em>a lot</em>). The biggest thing to note is that 9400M/9600M GT users now have power source-based switching! A host of bugfixes were put in place, and I&#8217;m also proud to announce that gfxCardStatus is now localized in <strong><em>11 languages</em></strong> (including English)! Thanks to everyone who has sent in localizations! If you would like to translate gfxCardStatus into another language, get in touch with me (cody [at] codykrieger [dot] com).</p>
+<p>Hit &#8220;Check for Updates&#8221; or go download it manually from the gfxCardStatus website! <a href="http://codykrieger.com/gfxCardStatus">http://codykrieger.com/gfxCardStatus</a></p>
+<p><a href="http://codykrieger.com/gfxCardStatus"></a>As usual, please let me know of any issues that you encounter via email (cody [at] codykrieger [dot] com), or in the comments!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Refreshing New Look!]]></title>
+    <link href="http://blog.codykrieger.com/2010/12/07/refreshing-new-look-.html"/>
+    <updated>2010-12-07T00:00:00-05:00</updated>
+    <id>http://blog.codykrieger.com/2010/12/07/refreshing-new-look-</id>
+    <content type="html"><![CDATA[<p>As you may have noticed, <a href="http://codykrieger.com">my website just got a major overhaul</a>.  It&#8217;s much cleaner and easier on the eyes than it once was. <strong>It even looks great in lynx</strong>.  Please let me know if anyone has any issues with broken links or missing content. General feedback is also welcome at cody [at] codykrieger [dot] com, or via the comments. :)  Thanks!</p>
+<p>ck</p>
+<p>P.S. - The next gfxCardStatus v2.0 beta will be out in the next couple days. Follow me <a href="http://twitter.com/codykrieger">on Twitter (@codykrieger)</a> to see the news when it breaks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.8 - Power source-based switching!]]></title>
+    <link href="http://blog.codykrieger.com/2010/08/02/gfxcardstatus-v1-8-power-source-based-switching-.html"/>
+    <updated>2010-08-02T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/08/02/gfxcardstatus-v1-8-power-source-based-switching-</id>
+    <content type="html"><![CDATA[<p>It&#8217;s available now! Please hit &#8216;Check for updates&#8217; in the gfxCardStatus menu or manually download it from its home page at <a href="http://codykrieger.com/gfxCardStatus/">http://codykrieger.com/gfxCardStatus/</a></p>
+<p><a href="http://codykrieger.com/gfxCardStatus/"></a>I&#8217;d also encourage you to please <a href="http://codykrieger.com/gfxCardStatus/releasenotes/1.8.html">view the release notes here</a>, they&#8217;re important!</p>
+<p>Comments and suggestions welcome via comment or email! cody [at] codykrieger [dot] com</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.8.1, the "oops" release]]></title>
+    <link href="http://blog.codykrieger.com/2010/08/02/gfxcardstatus-v1-8-1-the-oops-release.html"/>
+    <updated>2010-08-02T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/08/02/gfxcardstatus-v1-8-1-the-oops-release</id>
+    <content type="html"><![CDATA[<p>What?! Another release already?! You bet. I made a rather stupid mistake that made gfxCardStatus crash upon building the dependency list at times. This update fixes the issue.</p>
+<p>Please update at your leisure by hitting &#8216;Check for updates&#8217; in the
+  menu, or downloading it manually from my website. Release notes are <a
+    href="http://codykrieger.com/gfxCardStatus/releasenotes/1.8.1.html">available
+    here</a>.
+</p>
+<p>Email and comments are welcome for questions and suggestions! My email address is cody [at] codykrieger [dot] com.</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.7.5! Bugfixes, mode remembering upon startup.]]></title>
+    <link href="http://blog.codykrieger.com/2010/05/24/gfxcardstatus-v1-7-5-bugfixes-mode-remembering-upon-startup-.html"/>
+    <updated>2010-05-24T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/05/24/gfxcardstatus-v1-7-5-bugfixes-mode-remembering-upon-startup-</id>
+    <content type="html"><![CDATA[<p>You may have noticed v1.7.5 has been released! Included are some bugfixes (namely the one where the GPU would sometimes switch back to the 330M after all dependent apps had quit while on Intel Only mode), and the ability to have it recall the last mode you used before quitting on startup. A full list of changes is <a href="http://codykrieger.com/gfxCardStatus/changelog">available here</a>.</p>
+<p>If you haven&#8217;t already downloaded it, you can <a href="http://codykrieger.com/gfxCardStatus/">go get it here</a>!</p>
+<p>As usual, please leave a comment on this post or drop me a line with any comments, concerns or questions. My email address is cody [at] codykrieger [dot] com.</p>
+<p>Thanks!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.7 released! Full 9400M/9600M GT support, lots more...]]></title>
+    <link href="http://blog.codykrieger.com/2010/05/14/gfxcardstatus-v1-7-released-full-9400m-9600m-gt-support-lots-more-.html"/>
+    <updated>2010-05-14T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/05/14/gfxcardstatus-v1-7-released-full-9400m-9600m-gt-support-lots-more-</id>
+    <content type="html"><![CDATA[<p>That&#8217;s right! v1.7 has been released! Full support for indicating status of 9400M/9600M GT systems (as well as the switching that worked before) is built in to v1.7.</p>
+<p>The rest of the users on i5/i7 systems will see three new things: Intel Only mode, NVIDIA Only mode, and Dynamic Switching mode. The first two are obvious, and the latter hands dynamic switching control back to OS X.  I have also completely eliminated the delay associated with opening the menu bar item when the dependent process list was being generated, while the 330M was the active GPU. Cool, huh?!</p>
+<p><a href="http://codykrieger.com/gfxCardStatus/">Go get it</a>!  Let me know if you run into any issues. I&#8217;m aware of the bug where it occasionally switches back to the 330M when you&#8217;re on Intel Only mode and you quit all apps that would normally use the 330M. This will be fixed in a maintenance release in the future.</p>
+<p>Have fun!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus and 2009 MacBook Pros with NVIDIA 9400/9600 GPUs]]></title>
+    <link href="http://blog.codykrieger.com/2010/05/11/gfxcardstatus-and-2009-macbook-pros-with-nvidia-9400-9600-gpus.html"/>
+    <updated>2010-05-11T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/05/11/gfxcardstatus-and-2009-macbook-pros-with-nvidia-9400-9600-gpus</id>
+    <content type="html"><![CDATA[<p>Many users have reported that gfxCardStatus works <em><strong>even on the 2009 MacBook Pros</strong></em>! I don&#8217;t have one to test with, but I can only assume that this is indeed the case. It wil continually show the &#8220;n,&#8221; as the detection for which GPU is in use isn&#8217;t built in yet, but switching works, <strong><em>without logging out</em></strong>. I&#8217;ll build the detection into a future version, hopefully sooner rather than later! I envision an icon change: &#8220;d&#8221; for discrete, and &#8220;i&#8221; for integrated. This will provide greater consistency across all platforms.</p>
+<p>Check back soon!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus is officially open-source.]]></title>
+    <link href="http://blog.codykrieger.com/2010/05/09/gfxcardstatus-is-officially-open-source-.html"/>
+    <updated>2010-05-09T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/05/09/gfxcardstatus-is-officially-open-source-</id>
+    <content type="html"><![CDATA[<p>You heard right! I have open-sourced the code for gfxCardStatus. It can be found on GitHub at <a href="http://github.com/codykrieger/gfxCardStatus">http://github.com/codykrieger/gfxCardStatus</a>. Create a fork, go nuts, and feel free to send the comments and suggestions my way!</p>
+<p>v1.7 is almost upon us, which will support toggling automatic switching between GPUs, or manually locking the machine on one or the other GPU. Cheers!</p>
+<p>Oh, and I made <a href="http://www.engadget.com/2010/05/08/macbook-pros-with-nvidia-geforce-gt-330m-graphics-get-discrete-s/">Engadget</a> and <a href="http://www.anandtech.com/show/3709/gfxcardstatus-brings-2010-macbook-pro-gpu-switching">AnandTech</a>, as well as various other sweet tech news sites&nbsp;today. :)</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.5 - Dependent Process List!]]></title>
+    <link href="http://blog.codykrieger.com/2010/05/01/gfxcardstatus-v1-5-dependent-process-list-.html"/>
+    <updated>2010-05-01T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/05/01/gfxcardstatus-v1-5-dependent-process-list-</id>
+    <content type="html"><![CDATA[<p>The latest version of gfxCardStatus has been released! It now has a list of processes that are using the NVIDIA card, if that&#8217;s the active GPU. Now it&#8217;s easier than ever to tell exactly what&#8217;s the culprit of your shortened battery life.</p>
+<p>As usual, just hit &#8220;Check for Updates&#8221; from the menu bar icon if you&#8217;ve got v1.2 or above already, or go download it at <a href="http://codykrieger.com/gfxCardStatus/">http://codykrieger.com/gfxCardStatus/</a></p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus v1.4, now with Growl support!]]></title>
+    <link href="http://blog.codykrieger.com/2010/04/27/gfxcardstatus-v1-4-now-with-growl-support-.html"/>
+    <updated>2010-04-27T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/04/27/gfxcardstatus-v1-4-now-with-growl-support-</id>
+    <content type="html"><![CDATA[<p>Exactly as the title implies, I have added Growl support to v1.4 of <a href="http://codykrieger.com/gfxCardStatus/">gfxCardStatus</a>! If you&#8217;ve got v1.2 or above, you can just hit &#8220;Check for Updates&#8221; in the menu, and you&#8217;re all set.</p>
+<p>Drop a comment or an email if you&#8217;ve got any problems!</p>
+<p>ck :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus on iusethis.com]]></title>
+    <link href="http://blog.codykrieger.com/2010/04/27/gfxcardstatus-on-iusethis-com.html"/>
+    <updated>2010-04-27T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/04/27/gfxcardstatus-on-iusethis-com</id>
+    <content type="html"><![CDATA[<p>Users of gfxCardStatus! If you&#8217;re an iusethis.com member, please go here: <a href="http://osx.iusethis.com/app/gfxcardstatus">http://osx.iusethis.com/app/gfxcardstatus</a> and say that you use gfxCardStatus!</p>
+<p>Thanks!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[gfxCardStatus: MacBook Pro i5/i7 GPU Status]]></title>
+    <link href="http://blog.codykrieger.com/2010/04/24/gfxcardstatus-macbook-pro-i5-i7-gpu-status.html"/>
+    <updated>2010-04-24T00:00:00-04:00</updated>
+    <id>http://blog.codykrieger.com/2010/04/24/gfxcardstatus-macbook-pro-i5-i7-gpu-status</id>
+    <content type="html"><![CDATA[<p>I just got my hands on a brand new 17&#8221; MacBook Pro with the 2.66GHz Intel Core i7 in it, and the NVIDIA GeForce GT 330M graphics card. The thing is screaming fast! I was a bit annoyed by the fact that you couldn&#8217;t easily view which GPU was in use&#8230;but now, there&#8217;s an app for that! Specifically, gfxCardStatus. It&#8217;s of my own creation. You can download it here: <a href="http://codykrieger.com/gfxCardStatus.app.zip">http://codykrieger.com/gfxCardStatus</a></p>
+<p><a href="http://codykrieger.com/gfxCardStatus.app.zip"></a>gfxCardStatus is a menu bar application that automatically updates when your display configuration changes (e.g. plugging in an external display, etc.). The &#8220;i&#8221; icon signifies that the Intel HD Graphics are in use, and the &#8220;n&#8221; signifies that the NVIDIA GeForce GT 330M is in use.</p>
+<p><span style="text-decoration: line-through;">Please note that this app will not work with any generations of the MacBook Pro prior to the most recent model with the i5s and i7s that have the 330M.</span>&nbsp;Any dual-GPU MacBook Pro is supported (late 2008 to current generation).</p>
+<p><span style="text-decoration: line-through;">Until I set up a permanent webpage for gfxCardStatus, discussion of it lives in this MacRumors Forums thread: </span><a href="http://forums.macrumors.com/showthread.php?t=901521&amp;page=5#122"><span style="text-decoration: line-through;">http://forums.macrumors.com/showthread.php?t=901521&amp;page=5#122</span></a> gfxCardStatus&#8217; official homepage: <a href="http://codykrieger.com/gfxCardStatus/">http://codykrieger.com/gfxCardStatus/</a></p>
+<p><a href="http://codykrieger.com/gfxCardStatus/"></a> Enjoy, and let me know what you think!</p>
+<p>ck</p>
+]]></content>
+  </entry>
+  
+</feed>
