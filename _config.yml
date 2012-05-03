@@ -6,7 +6,7 @@ url: http://blog.codykrieger.com
 title: cody krieger
 subtitle:
 author: Cody Krieger
-simple_search: http://google.com/search
+simple_search: # http://google.com/search
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")

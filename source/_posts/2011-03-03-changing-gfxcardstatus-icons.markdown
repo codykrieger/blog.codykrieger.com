@@ -13,7 +13,9 @@ and moving toward a standardized icon system is one of the ways I was trying
 to do just that.
 
 The good news is that you can actually change it back yourselves! Just follow 
-these steps:
+these steps.
+
+<!-- more -->
 
 - Control click on gfxCardStatus.app and hit "Show Package Contents"
 - Go to Contents > Resources

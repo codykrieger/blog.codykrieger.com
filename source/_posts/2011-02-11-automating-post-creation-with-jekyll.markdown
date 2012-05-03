@@ -16,7 +16,11 @@ WordPress or Posterous, and with GitHub Pages, you don't have to drop a
 dime on hosting it anywhere. It is very simple, and that leads to what
 is my only real complaint about it: there is no good way to
 automagically generate posts. That is, there wasn't, until I wrote a
-neat little script to do it for me! Here it is:
+neat little script to do it for me!
+
+<!-- more -->
+
+Here it is:
 
 <script src="https://gist.github.com/823013.js?file=newpost.rb">
 </script>

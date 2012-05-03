@@ -1,2 +1,25 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+a {
+  text-decoration: none;
+}
+
+article header {
+  margin: 0 0 1em;
+
+  p.meta {
+    position: relative;
+    margin: 0 0 3em;
+  }
+
+  h1 {
+    line-height: 1;
+    margin: 0;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+

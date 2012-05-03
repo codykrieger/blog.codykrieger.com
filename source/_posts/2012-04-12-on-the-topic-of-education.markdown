@@ -7,6 +7,8 @@ comments: true
 
 This is a real conversation I had today with someone that works in RIT's Software Engineering department office.
 
+<!-- more -->
+
 - **Me:** *[Speaking about the Software Engineering department's website.]* This new design is terrible. I'd have a hard time taking this major seriously if I saw the website before I visited RIT and had a tour of the program.
 - **Office worker:** Yeah, we don't really have any control over it. Higher-ups make the decisions and we just have to deal with it.
 - **Me:** It seems like every department is completely helpless to make their own decisions and empower their students.
