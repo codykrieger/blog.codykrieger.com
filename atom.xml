@@ -4,7 +4,7 @@
   <title><![CDATA[cody krieger]]></title>
   <link href="http://blog.codykrieger.com/atom.xml" rel="self"/>
   <link href="http://blog.codykrieger.com/"/>
-  <updated>2012-05-03T10:44:09-04:00</updated>
+  <updated>2012-05-03T10:44:55-04:00</updated>
   <id>http://blog.codykrieger.com/</id>
   <author>
     <name><![CDATA[Cody Krieger]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[this-is-a-test]]></title>
-    <link href="http://blog.codykrieger.com/2012/05/03/this-is-a-test.html"/>
-    <updated>2012-05-03T10:39:00-04:00</updated>
-    <id>http://blog.codykrieger.com/2012/05/03/this-is-a-test</id>
-    <content type="html"><![CDATA[<p>Derping.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[On the Topic of Education]]></title>
