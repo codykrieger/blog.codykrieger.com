@@ -5,20 +5,29 @@ a {
   text-decoration: none;
 }
 
-article header {
-  margin: 0 0 1em;
+ul {
+  list-style-position: inside;
+}
 
-  p.meta {
-    position: relative;
-    margin: 0 0 3em;
-  }
+article {
+  background: none !important;
 
-  h1 {
-    line-height: 1;
-    margin: 0;
+  header {
+    background: none !important;
+    margin: 0 0 1em;
 
-    a:hover {
-      text-decoration: none;
+    p.meta {
+      position: relative;
+      margin: 0 0 3em;
+    }
+
+    h1 {
+      line-height: 1;
+      margin: 0;
+
+      a:hover {
+        text-decoration: none;
+      }
     }
   }
 }
